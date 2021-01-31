@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.8vw;
+    background: #fef2eb;
+}
+
+::-webkit-scrollbar-track {
+    background: #dadada;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dc143c88;
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color:#dc143cbb;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#000000cc, #00000033), url(../images/ales-krivec-QnNqGoCnBg0-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 50px;
+        margin-left: 7%;
+
+        .icon {
+            width: clamp(75px, 150px, 150px);
+        }
+    
+        h1 {
+            margin-top: 80px;
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #fdfdfd;
+        }
+    
+        p {
+            margin-top: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: clamp(.9rem, 2vw, 1.2rem);
+            color:#fdfdfd;
+        }
+    }
+}
+
+.highlight-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fef2eb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+
+    .highlight-text {
+
+        h1 {
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            color: #7e411e;
+        }
+
+        p {
+            margin-top: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: clamp(.9rem, 2vw, 1.2rem);
+            color:#7e411ed0;
+
+            span {
+                color: #dc143c;
+                font-weight: 700;
+            }
+        }
+
+        button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #fef2eb;
+            background-color: #dc143c;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: clamp(.9rem, 2vw, 1.2rem);
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all .3s ease-in;
+
+            &:hover {
+                background-color: #aa0025;
+            }
+        }
+    }
+
+    img {
+        width: 50%;
+    }
+    
+}
+
+.personalized-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#000000cc, #00000033), url(../images/maranda-vandergriff-fZBwUGlKbO8-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+
+    .personalized-text {
+        text-align: center;
+
+        h1 {
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #fdfdfd;
+        }
+    
+        p {
+            margin-top: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: clamp(.9rem, 2vw, 1.2rem);
+            color:#fdfdfd;
+        }
+    }
+
+    .cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        div {
+            position: relative;
+            width: 25%;
+            
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .card-text {
+                position: relative;
+                width: 100%;
+                height: 160px;
+                background-color: #fef2eb77;
+                padding: 10px 20px;
+                top: -4px;
+                border-radius: 0 0 10px 10px;
+
+                h2 {
+                    font-family: 'Yusei Magic', sans-serif;
+                    font-size: clamp(1rem, 2vw, 1.6rem);
+                    color: #dc143c;
+                }
+            
+                p {
+                    margin-top: 5px;
+                    font-family: 'Noto Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: clamp(.7rem, 2vw, .9rem);
+                    color:#fdfdfd;
+                }
+            }
+        }
+    }
+}
+
+.product-section {
+    position: relative;
+    width: 100%;
+    background-color: #fef2eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5% 50px 5%;
+
+    h1 {
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: clamp(1.2rem, 4vw, 2.6rem);
+        color: #7e411e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+
+        .product-card {
+            position: relative;
+            background-color: #7e411e88;
+            padding-bottom: 10px;
+            text-align: center;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+
+            h2 {
+                font-family: 'Yusei Magic', sans-serif;
+                font-size: clamp(.8rem, 4vw, 1.6rem);
+                color: #472511;
+            }
+
+            p {
+                margin-top: 2px;
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 400;
+                font-size: clamp(.8rem, 2vw, .9rem);
+                color:#fdfdfd;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#000000cc, #00000033), url(../images/simona-sergi-RfUr5P6eVuY-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+
+    form {
+        background-color: #dc143caa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding: 25px;
+        border-radius: 10px;
+        
+
+        img {
+            width: 150px;
+        }
+
+        h1 {
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: clamp(1.2rem, 4vw, 1.6rem);
+            color: #fdfdfd;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .form-label {
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+
+            input {
+                width: 100%;
+                height: 40px;
+                padding-top: 15px;
+                padding-left: 10px;
+                border: none;
+                outline: none;
+                color: #fff;
+                background-color: transparent;
+            }
+
+            label {
+                position: absolute;
+                color: #fef2eb;
+                font-weight: 400;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                pointer-events: none;
+                border-bottom: solid 1px #fef2eb;
+                font-size: .95em;
+                overflow: hidden;
+
+                span {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0px;
+                    transition: all .5s ease;
+                }
+            }
+
+            input:focus + label span, input:valid + label span {
+                transform: translateY(-120%);
+                font-size: .8em;
+            }
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: #fef2eb;
+            color: #aa0025;
+            font-size: 1em;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            padding: 8px 32px;
+            border-radius: 8px;
+            align-self: center;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+            margin-top: 20px;
+
+            &:hover {
+                background: #ffb3c2;
+            }
+        }
+    }
+    
+    .schedule {
+        position: absolute;
+        top: 50px;
+        left: 5%;
+        color: #fef2eb;
+        font-family: 'Noto Sans', sans-serif;
+
+        h3 {
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: clamp(.8rem, 4vw, 1.6rem);
+            margin-bottom: 20px;    
+        }
+
+        ul{
+            font-weight: 400;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 5px;
+
+                span{
+                    float: left;
+                    width: 100px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .contact-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+        .schedule {
+            position: relative;
+            top: auto;
+            left: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .hero-section {
+        .hero-container {
+            width: 60%;
+        }
+    }
+
+    .highlight-section {
+        flex-direction: column;
+
+        .highlight-text {
+            text-align: center;
+        }
+
+        img {
+            margin-top: 50px;
+            width: 70%;
+        }
+    }
+
+    .personalized-section {
+        height: auto;
+        
+        .cards {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            div {
+                position: relative;
+                width: 80%;
+                margin-bottom: 20px;
+
+                .card-text {
+                    height: 120px;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-section {
+        .products {
+            grid-template-columns: auto;
+        }
+    }
+
+    .contact-section {
+        flex-direction: column;
+        height: auto;
+
+        form {
+            width: 80%;
+            margin-bottom: 25px;
+        }
+
+        .schedule {
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .hero-section {
+        .hero-container {
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
+    .contact-section {
+        form {
+            .form-label {
+                width: 80%;
+            }
+        }
+    }
+}

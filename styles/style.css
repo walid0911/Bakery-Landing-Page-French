@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+  background: #fef2eb;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dc143c88;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dc143cbb;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000cc, #00000033), url(../images/ales-krivec-QnNqGoCnBg0-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-position-x: right;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-section .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 7%;
+}
+
+.hero-section .hero-container .icon {
+  width: clamp(75px, 150px, 150px);
+}
+
+.hero-section .hero-container h1 {
+  margin-top: 80px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #fdfdfd;
+}
+
+.hero-section .hero-container p {
+  margin-top: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #fdfdfd;
+}
+
+.highlight-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fef2eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5%;
+}
+
+.highlight-section .highlight-text h1 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #7e411e;
+}
+
+.highlight-section .highlight-text p {
+  margin-top: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #7e411ed0;
+}
+
+.highlight-section .highlight-text p span {
+  color: #dc143c;
+  font-weight: 700;
+}
+
+.highlight-section .highlight-text button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #fef2eb;
+  background-color: #dc143c;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  border-radius: 5px;
+  margin-top: 20px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.highlight-section .highlight-text button:hover {
+  background-color: #aa0025;
+}
+
+.highlight-section img {
+  width: 50%;
+}
+
+.personalized-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000cc, #00000033), url(../images/maranda-vandergriff-fZBwUGlKbO8-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 20px;
+}
+
+.personalized-section .personalized-text {
+  text-align: center;
+}
+
+.personalized-section .personalized-text h1 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #fdfdfd;
+}
+
+.personalized-section .personalized-text p {
+  margin-top: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #fdfdfd;
+}
+
+.personalized-section .cards {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.personalized-section .cards div {
+  position: relative;
+  width: 25%;
+}
+
+.personalized-section .cards div img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.personalized-section .cards div .card-text {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-color: #fef2eb77;
+  padding: 10px 20px;
+  top: -4px;
+  border-radius: 0 0 10px 10px;
+}
+
+.personalized-section .cards div .card-text h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  color: #dc143c;
+}
+
+.personalized-section .cards div .card-text p {
+  margin-top: 5px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fdfdfd;
+}
+
+.product-section {
+  position: relative;
+  width: 100%;
+  background-color: #fef2eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5% 50px 5%;
+}
+
+.product-section h1 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(1.2rem, 4vw, 2.6rem);
+  color: #7e411e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-section .products {
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+}
+
+.product-section .products .product-card {
+  position: relative;
+  background-color: #7e411e88;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product-section .products .product-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-section .products .product-card h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(0.8rem, 4vw, 1.6rem);
+  color: #472511;
+}
+
+.product-section .products .product-card p {
+  margin-top: 2px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: #fdfdfd;
+}
+
+.product-section .products .product-card p span {
+  font-weight: 700;
+}
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000cc, #00000033), url(../images/simona-sergi-RfUr5P6eVuY-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-section form {
+  background-color: #dc143caa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.contact-section form img {
+  width: 150px;
+}
+
+.contact-section form h1 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  color: #fdfdfd;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contact-section form .form-label {
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+.contact-section form .form-label input {
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.contact-section form .form-label label {
+  position: absolute;
+  color: #fef2eb;
+  font-weight: 400;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  border-bottom: solid 1px #fef2eb;
+  font-size: .95em;
+  overflow: hidden;
+}
+
+.contact-section form .form-label label span {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.contact-section form .form-label input:focus + label span, .contact-section form .form-label input:valid + label span {
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  font-size: .8em;
+}
+
+.contact-section form button {
+  border: none;
+  outline: none;
+  background: #fef2eb;
+  color: #aa0025;
+  font-size: 1em;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  padding: 8px 32px;
+  border-radius: 8px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  margin-top: 20px;
+}
+
+.contact-section form button:hover {
+  background: #ffb3c2;
+}
+
+.contact-section .schedule {
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  color: #fef2eb;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.contact-section .schedule h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: clamp(0.8rem, 4vw, 1.6rem);
+  margin-bottom: 20px;
+}
+
+.contact-section .schedule ul {
+  font-weight: 400;
+  list-style-type: none;
+}
+
+.contact-section .schedule ul li {
+  margin-bottom: 5px;
+}
+
+.contact-section .schedule ul li span {
+  float: left;
+  width: 100px;
+  font-weight: 700;
+}
+
+.contact-section .schedule p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact-section .schedule {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .hero-section .hero-container {
+    width: 60%;
+  }
+  .highlight-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .highlight-section .highlight-text {
+    text-align: center;
+  }
+  .highlight-section img {
+    margin-top: 50px;
+    width: 70%;
+  }
+  .personalized-section {
+    height: auto;
+  }
+  .personalized-section .cards {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personalized-section .cards div {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .personalized-section .cards div .card-text {
+    height: 120px;
+  }
+  .personalized-section .cards div .card-text h2 {
+    font-size: 22px;
+  }
+  .personalized-section .cards div .card-text p {
+    font-size: 12px;
+  }
+  .product-section .products {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .contact-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .contact-section form {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  .contact-section .schedule h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero-section .hero-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .contact-section form .form-label {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
